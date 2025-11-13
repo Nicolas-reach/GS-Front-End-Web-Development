@@ -14,12 +14,12 @@
     <p>Conectando pessoas, competências e propósito por meio da tecnologia.</p>
   </header>
 
-  <main>
-    <section id="profiles-section">
-      <h2>Profissionais em Destaque</h2>
-      <div id=""></div>
-    </section>
+  <section id="profiles-section">
+  <h2>Profissionais em Destaque</h2>
+  <div id="profiles-container"></div>
+  </section>
 
+    <!--Quiz-->
     <section id="quiz">
       <h2>Quiz – Mercado de Trabalho</h2>
       <div id="quiz-container">
@@ -31,9 +31,18 @@
     </section>
   </main>
 
+    <!-- Modal para detalhes -->
+  <div id="modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button id="modal-close" class="fechar" aria-label="Fechar">&times;</button>
+      <div id="perfil-detalhes"></div>
+    </div>
+  </div>
+
   <footer>
     <p>&copy; 2025 Conexão Futuro | Projeto Global Solution</p>
   </footer>
+
 
     <script src="src/js/script.js"></script>
 
