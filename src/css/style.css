@@ -1,29 +1,75 @@
+/* Estilos Gerais */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f2f2f2;
+  background-color: #f4f7fb;
   color: #333;
   margin: 0;
   padding: 0;
 }
 
 header {
+  background: #0077b6;
+  color: #fff;
   text-align: center;
-  background-color: #ffffff;
-  padding: 40px 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 40px 10px;
 }
 header h1 {
-    color:  #4b3ef5;
+   margin: 0;
+  font-size: 2rem;
 }
 
-/* Secoes */
+header p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
 main {
   max-width: 1000px;
   margin: 40px auto;
   padding: 0 20px;
 }
+
 section h2 {
   text-align: center;
   color: #333;
   margin-bottom: 20px;
+}
+
+/* Quiz */
+#quiz {
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+#opcoes button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: none;
+  background-color: #1e3a8a;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#opcoes button:hover {
+  background-color: #3b82f6;
+}
+
+#reiniciar-btn {
+  background-color: #16a34a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
 }
