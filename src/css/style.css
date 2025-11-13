@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 40px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+header h1 {
+    color:  #4b3ef5;
+}
+
+/* Secoes */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
