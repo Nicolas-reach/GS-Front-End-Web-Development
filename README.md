@@ -15,10 +15,6 @@ A aplicação consiste em uma Landing Page que apresenta uma listagem de perfis 
 * **CSS3:** Estilização (incluindo Flexbox para layout), animações (`@keyframes`) e transições.
 * **JavaScript (ES6+):** Manipulação do DOM, renderização dinâmica de perfis (Array de 10 objetos), funcionalidade do Quiz e interatividade do modal.
 
-## 🔑 Usuários e Senhas
-
-Não se aplica. O projeto é uma aplicação *client-side* e não possui sistema de autenticação ou login.
-
 ## 🔗 Links
 
 * **Link do Deploy (GitHub Pages):** ``
@@ -28,4 +24,4 @@ Não se aplica. O projeto é uma aplicação *client-side* e não possui sistema
 
 | Nome Completo | RM | Turma |
 | :--- | :--- | :--- |
-| Nicolas Forcione e Oliveira e Souza | 566998 | [Sua Turma] |
+| Nicolas Forcione e Oliveira e Souza | 566998 | [1ESPA] |
