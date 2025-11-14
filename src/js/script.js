@@ -68,7 +68,7 @@ carregarPergunta();
 // Dados dos perfis 
 const perfis = {
   "Ana Silva": {
-    foto: "",
+    foto: "src/assets/ana-silva.jpg",
     cargo: "Desenvolvedora Front-End",
     formacao: "Sistemas de Informação - USP",
     experiencia: ["Front-end Developer na WebCorp (2019-2022)", "Estagiária na StartX (2017-2019)"],
@@ -77,7 +77,7 @@ const perfis = {
     hobbies: ["Leitura", "Pintura"]
   },
   "Bruno Costa": {
-    foto: "",
+    foto: "src/assets/bruno-costa.jpg",
     cargo: "UX Designer",
     formacao: "Design Digital - Fiap",
     experiencia: ["UX Lead na DesignNow (2020-Presente)"],
@@ -86,7 +86,7 @@ const perfis = {
     hobbies: ["Fotografia"]
   },
   "Carla Souza": {
-    foto: "",
+    foto: "src/assets/carla-souza.jpg",
     cargo: "Analista de Dados",
     formacao: "Ciência da Computação - Fiap",
     experiencia: ["Analista de Dados na DataCorp (2018-Presente)"],
@@ -95,7 +95,7 @@ const perfis = {
     hobbies: ["Corrida"]
   },
   "Diego Ramos": {
-    foto: "",
+    foto: "src/assets/diego-ramos.jpg",
     cargo: "Desenvolvedor Back-End",
     formacao: "Engenharia de Software - Fiap",
     experiencia: ["Back-End Developer na APIworks (2017-Presente)"],
@@ -104,7 +104,7 @@ const perfis = {
     hobbies: ["Games"]
   },
   "Eduarda Lima": {
-    foto: "",
+    foto: "src/assets/eduarda-lima.jpg",
     cargo: "Gestora de Projetos",
     formacao: "Administração - Fiap",
     experiencia: ["PM na AgileTeams (2016-Presente)"],
@@ -113,7 +113,7 @@ const perfis = {
     hobbies: ["Viagens"]
   },
   "Felipe Alves": {
-    foto: "",
+    foto: "src/assets/felipe-alves.jpg",
     cargo: "DevOps Engineer",
     formacao: "Engenharia da Computação - Fiap",
     experiencia: ["DevOps na CloudCorp (2019-Presente)"],
@@ -122,7 +122,7 @@ const perfis = {
     hobbies: ["Automodelismo"]
   },
   "Gabriela Torres": {
-    foto: "",
+    foto: "src/assets/gabriela-torres.jpg",
     cargo: "Especialista em IA",
     formacao: "IA Aplicada - Insper",
     experiencia: ["Pesquisadora em IA (2020-Presente)"],
@@ -131,7 +131,7 @@ const perfis = {
     hobbies: ["Xadrez"]
   },
   "Henrique Rocha": {
-    foto: "",
+    foto: "src/assets/henrique-rocha.jpg",
     cargo: "Analista de Segurança",
     formacao: "Segurança da Informação - Fiap",
     experiencia: ["Security Analyst na SecureNet (2018-Presente)"],
@@ -140,7 +140,7 @@ const perfis = {
     hobbies: ["Ciclismo"]
   },
   "Isabela Martins": {
-    foto: "",
+    foto: "src/assets/isabela-martins.jpg",
     cargo: "Arquiteta de Software",
     formacao: "Ciência da Computação - Fiap",
     experiencia: ["Solution Architect (2019-Presente)"],
@@ -149,7 +149,7 @@ const perfis = {
     hobbies: ["Jardinagem"]
   },
   "João Pereira": {
-    foto: "",
+    foto: "src/assets/joao-pereira.jpg",
     cargo: "Engenheiro de Dados",
     formacao: "Engenharia de Computação - Fiap",
     experiencia: ["Data Engineer na BigDataCo (2017-Presente)"],
