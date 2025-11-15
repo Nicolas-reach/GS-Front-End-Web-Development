@@ -148,3 +148,12 @@ section h2 {
 }
 .modal .acao.recomendar { background: #16a34a; }
 .modal .acao.mensagem { background: #2563eb; }
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  margin-top: 50px;
+}
