@@ -4,5 +4,5 @@
 Nicolas Forcione e Oliveira e Souza - RM566998 - 1ESPA
 
 #Links: 
-Link do Deploy (GitHub Pages):
-Link do Repositório (GitHub):
+Link do Deploy (GitHub Pages):https://nicolas-reach.github.io/GS-Front-End-Web-Development/
+Link do Repositório (GitHub):https://github.com/Nicolas-reach/GS-Front-End-Web-Development

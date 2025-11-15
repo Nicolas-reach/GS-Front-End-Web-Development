@@ -17,8 +17,8 @@ A aplicação consiste em uma Landing Page que apresenta uma listagem de perfis 
 
 ## 🔗 Links
 
-* **Link do Deploy (GitHub Pages):** ``
-* **Link do Repositório (GitHub):** ``
+* **Link do Deploy (GitHub Pages):** `https://nicolas-reach.github.io/GS-Front-End-Web-Development/`
+* **Link do Repositório (GitHub):** `https://github.com/Nicolas-reach/GS-Front-End-Web-Development`
 
 ## 👤 Autor
 
