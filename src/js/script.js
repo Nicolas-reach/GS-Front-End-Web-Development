@@ -2,24 +2,38 @@
 const perguntas = [
   {
     pergunta: "Qual é a principal habilidade para o futuro do trabalho?",
-    opcoes: ["Comunicação", "Trabalho solitário", "Falta de empatia"],
+    opcoes: ["Comunicação e Adaptabilidade", "Trabalho isolado", "Rigidez mental"],
     correta: 0
   },
   {
-    pergunta: "Qual tecnologia mais impacta o mercado atual?",
-    opcoes: ["Blockchain", "Fax", "Disquete"],
-    correta: 0
+    pergunta: "Qual tecnologia mais impacta a automação atual?",
+    opcoes: ["Máquina de Escrever", "Inteligência Artificial (IA)", "Disquete"],
+    correta: 1
   },
   {
     pergunta: "O que significa trabalhar de forma híbrida?",
     opcoes: ["Somente remoto", "Parte presencial e parte remota", "Somente presencial"],
+    correta: 1
+  },
+  {
+    pergunta: "O que é 'Lifelong Learning'?",
+    opcoes: ["Estudar apenas na faculdade", "Aprender continuamente a vida toda", "Aprender só quando o chefe manda"],
+    correta: 1
+  },
+  {
+    pergunta: "Qual destas é considerada uma 'Soft Skill'?",
+    opcoes: ["Programação em Python", "Inteligência Emocional", "Operação de máquinas"],
+    correta: 1
+  },
+  {
+    pergunta: "O que caracteriza a 'Gig Economy'?",
+    opcoes: ["Trabalhos fixos de 40 anos", "Trabalho autônomo e sob demanda", "Proibição de tecnologia"],
     correta: 1
   }
 ];
 
 let indice = 0;
 let pontuacao = 0;
-
 const perguntaEl = document.getElementById("pergunta");
 const opcoesEl = document.getElementById("opcoes");
 const resultadoEl = document.getElementById("resultado");
@@ -29,6 +43,10 @@ function carregarPergunta() {
   const atual = perguntas[indice];
   perguntaEl.textContent = atual.pergunta;
   opcoesEl.innerHTML = "";
+
+  // Limpa resultado anterior se houver
+  resultadoEl.textContent = ""; 
+
   atual.opcoes.forEach((op, i) => {
     const botao = document.createElement("button");
     botao.textContent = op;
@@ -48,9 +66,21 @@ function verificarResposta(opcaoSelecionada) {
 }
 
 function mostrarResultado() {
-  perguntaEl.textContent = `Você acertou ${pontuacao} de ${perguntas.length} perguntas!`;
+  perguntaEl.textContent = "Quiz Finalizado!";
   opcoesEl.innerHTML = "";
-  proximaBtn.classList.add("hidden");
+
+  // Mensagem personalizada baseada na pontuação
+  let mensagem = "";
+  if (pontuacao === perguntas.length) mensagem = "Excelente! Você está pronto para o futuro!";
+  else if (pontuacao > perguntas.length / 2) mensagem = "Muito bom! Continue se atualizando.";
+  else mensagem = "Que tal estudar mais sobre o mercado?";
+
+  resultadoEl.innerHTML = `
+    <strong>${mensagem}</strong><br><br>
+    Você acertou <span style="color:#0ea5e9; font-size:1.2rem">${pontuacao}</span> de ${perguntas.length} perguntas!
+  `;
+
+  // Botão de reiniciar
   reiniciarBtn.classList.remove("hidden");
 }
 
@@ -62,7 +92,7 @@ reiniciarBtn.onclick = () => {
   carregarPergunta();
 };
 
-// iniciar quiz
+// Iniciar quiz
 carregarPergunta();
 
 // Dados dos perfis 
@@ -76,6 +106,8 @@ const perfis = {
     soft: ["Comunicação", "Criatividade", "Trabalho em Equipe"],
     hobbies: ["Leitura", "Pintura"]
   },
+
+
   "Bruno Costa": {
     foto: "src/assets/bruno-costa.jpg",
     cargo: "UX Designer",
@@ -85,6 +117,7 @@ const perfis = {
     soft: ["Empatia", "Escuta ativa"],
     hobbies: ["Fotografia"]
   },
+
   "Carla Souza": {
     foto: "src/assets/carla-souza.jpg",
     cargo: "Analista de Dados",
@@ -94,6 +127,7 @@ const perfis = {
     soft: ["Análise crítica", "Organização"],
     hobbies: ["Corrida"]
   },
+
   "Diego Ramos": {
     foto: "src/assets/diego-ramos.jpg",
     cargo: "Desenvolvedor Back-End",
@@ -103,6 +137,7 @@ const perfis = {
     soft: ["Resiliência", "Liderança técnica"],
     hobbies: ["Games"]
   },
+
   "Eduarda Lima": {
     foto: "src/assets/eduarda-lima.jpg",
     cargo: "Gestora de Projetos",
@@ -112,6 +147,7 @@ const perfis = {
     soft: ["Planejamento", "Comunicação"],
     hobbies: ["Viagens"]
   },
+
   "Felipe Alves": {
     foto: "src/assets/felipe-alves.jpg",
     cargo: "DevOps Engineer",
@@ -121,6 +157,7 @@ const perfis = {
     soft: ["Automação", "Colaboração"],
     hobbies: ["Automodelismo"]
   },
+
   "Gabriela Torres": {
     foto: "src/assets/gabriela-torres.jpg",
     cargo: "Especialista em IA",
@@ -130,6 +167,7 @@ const perfis = {
     soft: ["Curiosidade", "Raciocínio lógico"],
     hobbies: ["Xadrez"]
   },
+
   "Henrique Rocha": {
     foto: "src/assets/henrique-rocha.jpg",
     cargo: "Analista de Segurança",
@@ -139,6 +177,7 @@ const perfis = {
     soft: ["Detalhismo", "Ética"],
     hobbies: ["Ciclismo"]
   },
+
   "Isabela Martins": {
     foto: "src/assets/isabela-martins.jpg",
     cargo: "Arquiteta de Software",
@@ -148,6 +187,7 @@ const perfis = {
     soft: ["Visão sistêmica", "Liderança"],
     hobbies: ["Jardinagem"]
   },
+
   "João Pereira": {
     foto: "src/assets/joao-pereira.jpg",
     cargo: "Engenheiro de Dados",
@@ -158,6 +198,7 @@ const perfis = {
     hobbies: ["Futebol"]
   }
 };
+
 
 // Renderiza os cards
 function renderCards() {
@@ -195,10 +236,11 @@ function abrirPerfil(name) {
     <p><strong>Habilidades:</strong> ${p.habilidades.join(', ')}</p>
     <p><strong>Soft Skills:</strong> ${p.soft.join ? p.soft.join(', ') : p.soft}</p>
     <p><strong>Hobbies:</strong> ${p.hobbies}</p>
-    <div style="text-align:center; margin-top:12px;">
-      <button class="acao recomendar">Recomendar Profissional</button>
-      <button class="acao mensagem">Enviar Mensagem</button>
+    <div style="text-align:center; margin-top:20px;">
+      <button class="acao recomendar">Recomendar</button>
+      <button class="acao mensagem">Mensagem</button>
     </div>
+
   `;
   modal.classList.remove('hidden');
   modal.setAttribute('aria-hidden','false');
